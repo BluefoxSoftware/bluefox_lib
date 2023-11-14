@@ -11,7 +11,7 @@ struct Plugin {
 
 extern "C" Plugin new_plugin(const char*);
 
-Plugin plugin_interface;
+extern "C" Plugin plugin_interface;
 
 extern "C" Plugin get_plugin() {
     return plugin_interface;
@@ -26,7 +26,7 @@ typedef struct {
 
 extern Plugin new_plugin(const char*);
 
-Plugin plugin_interface;
+extern Plugin plugin_interface;
 
 extern Plugin get_plugin() {
     return plugin_interface;
