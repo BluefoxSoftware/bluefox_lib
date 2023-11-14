@@ -11,7 +11,9 @@ impl Plugin {
     }
 }
 
-pub static mut plugin_interface: Plugin = Plugin {name: "Defualt" };
+extern "C" {
+    static mut plugin_interface: Plugin;
+}
 
 #[no_mangle]
 pub extern fn get_plugin() -> plugin::Plugin {
