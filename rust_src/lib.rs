@@ -3,12 +3,7 @@
 use internal_bluefox_lib::plugin;
 
 pub struct Plugin {
-    name: &'static str
-}
-impl Plugin {
-    pub fn new<T: AsRef<str>>(name: &'static str) -> Self {
-        Self { name }
-    }
+    pub name: &'static str
 }
 
 extern "C" {
