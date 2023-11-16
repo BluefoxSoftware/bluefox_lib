@@ -12,5 +12,4 @@ The plugin library and headers for bluefox_game
 * Rust
 * C
 * C++
-* Swift
 

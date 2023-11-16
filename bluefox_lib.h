@@ -7,6 +7,9 @@
 
 struct Plugin {
     const char* name;
+    void (*startup_func)();
+    void (*update_func)();
+    void (*fixed_update_func)();
 };
 
 extern "C" Plugin new_plugin(const char*);
@@ -22,6 +25,9 @@ extern "C" Plugin get_plugin() {
 
 typedef struct {
     const char* name;
+    void (*startup_func)();
+    void (*update_func)();
+    void (*fixed_update_func)();
 } Plugin;
 
 extern Plugin new_plugin(const char*);
