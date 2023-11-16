@@ -1,0 +1,4 @@
+module plugin {
+    header "plugin.h"
+    export *
+}
